@@ -772,7 +772,7 @@ const ApiOptions = ({ showModelOptions, apiErrorMessage, modelIdErrorMessage, is
 									})
 								}
 							}}>
-							{ollamaModels.map((model) => (
+							{ollamaModels.sort().map((model) => (
 								<VSCodeRadio key={model} value={model} checked={apiConfiguration?.ollamaModelId === model}>
 									{model}
 								</VSCodeRadio>
